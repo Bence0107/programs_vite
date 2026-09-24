@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const numbers = [1, 55, 6, 1, 2, 3];
+        const total = numbers.reduce((sum, item) => sum + item, 0);
+        console.log(total);
+
+        const products = [
+            { name: "Alma", category: "Gyümölcs", price: 150, quantity: 3 },
+            { name: "Banán", category: "Gyümölcs", price: 100, quantity: 5 },
+            { name: "Tej", category: "Tejtermék", price: 300, quantity: 2 },
+            { name: "Sajt", category: "Tejtermék", price: 450, quantity: 1 },
+            { name: "Kenyér", category: "Pékség", price: 200, quantity: 2 },
+            { name: "Tojás", category: "Tejtermék", price: 250, quantity: 12 },
+            { name: "Paradicsom", category: "Zöldség", price: 120, quantity: 4 },
+            { name: "Burgonya", category: "Zöldség", price: 80, quantity: 6 },
+            { name: "Csirke", category: "Hús", price: 1200, quantity: 1 },
+            { name: "Hal", category: "Hús", price: 900, quantity: 1 },
+        ];
+        const total2 = products.reduce((sum, obj) => sum + obj.price * obj.quantity, 0);
+        console.log(total2);
+        const total3 = products.reduce((acc, obj) => obj.price < 200 ? acc + obj.price * obj.quantity : acc, 0);
+        console.log(total3);
+    </script>
+
+</body>
+
+</html>

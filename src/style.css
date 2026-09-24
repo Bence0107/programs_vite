@@ -35,4 +35,30 @@ button {
   background-color: white;
   border-radius: 8px;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.activeBtn {
+  background-color: rgb(61, 61, 110);
+  color: aliceblue;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 3px gray;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.btn {
+  cursor: pointer;
 }
